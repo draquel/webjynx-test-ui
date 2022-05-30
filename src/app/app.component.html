@@ -2,8 +2,8 @@
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
-  <a class="btn btn-success" *ngIf="!isLoggedIn()" (click)="login()">Login</a>
-  <a class="btn btn-danger" *ngIf="isLoggedIn()" (click)="logoff()">Logout</a>
+  <a class="btn btn-success" *ngIf="!authService.isLoggedIn()" (click)="authService.login()">Login</a>
+  <a class="btn btn-danger" *ngIf="authService.isLoggedIn()" (click)="authService.logoff()">Logout</a>
 </nav>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
