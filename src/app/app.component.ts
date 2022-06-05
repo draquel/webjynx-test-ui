@@ -11,39 +11,5 @@ import {AuthService} from "./auth.service";
 export class AppComponent {
   title = 'Tour of Heroes';
 
-  constructor(public authService: AuthService) {
-  }
-
-  // authConfig: AuthConfig = {
-  //   issuer: 'http://localhost:8080/auth/realms/webjynx',
-  //   redirectUri: window.location.origin + "/heroes",
-  //   clientId: 'test-ui',
-  //   scope: 'acr email profile roles web-origins webjynx',
-  //   responseType: 'code',
-  //   disableAtHashCheck: true,
-  //   showDebugInformation: true
-  // }
-  //
-  // constructor(private oauthService: OAuthService) {
-  //   this.configure();
-  // }
-  //
-  // private configure() {
-  //   this.oauthService.configure(this.authConfig);
-  //   this.oauthService.setupAutomaticSilentRefresh();
-  //   this.oauthService.tokenValidationHandler = new  JwksValidationHandler();
-  //   this.oauthService.loadDiscoveryDocumentAndTryLogin();
-  // }
-  //
-  // public login() {
-  //   this.oauthService.initLoginFlow();
-  // }
-  //
-  // public logoff() {
-  //   this.oauthService.revokeTokenAndLogout();
-  // }
-  //
-  // public isLoggedIn(){
-  //   return this.oauthService.hasValidIdToken() || this.oauthService.hasValidAccessToken();
-  // }
+  constructor(public authService: AuthService) {  }
 }

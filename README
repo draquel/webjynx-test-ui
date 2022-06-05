@@ -1,0 +1,18 @@
+# WebJynx Test Angular UI
+
+### About
+This project was used as a tool to learn the basics of angular. The project goal was to compile the tools needed to develop
+ secure web applications using Angular SPA frontend with a REST based SpringBoot API back end. These included:
+ * OAuth2/OIDC User Authenticaiton
+ * API communication fundamentals
+ * Container Artifacts
+ * Error handling/reporting
+ * Modularization of reusable components
+
+### Research
+***
+Project code is largely based on these tutorials for getting started with angular. There has been some refactoring and modifications for use
+ in this example, but these contain more detailed expression of the core concepts and practices being tested and organized here.
+* [Angular - Tour of Heroes](https://angular.io/tutorial)
+* [Angular - Forms Module](https://angular.io/guide/forms)
+* [Spring/Angular Security w/ Keycloak](https://medium.com/@draquel84/list/springangular-auth-w-keycloak-2c7e2ff9bf00)

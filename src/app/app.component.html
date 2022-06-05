@@ -1,9 +1,27 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-  <a class="btn btn-success" *ngIf="!authService.isLoggedIn()" (click)="authService.login()">Login</a>
-  <a class="btn btn-danger" *ngIf="authService.isLoggedIn()" (click)="authService.logoff()">Logout</a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid p-0">
+    <span class="navbar-brand mb-0 h1">{{title}}</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/heroes">Heroes</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+          <a class="btn btn-success" role="button" *ngIf="!authService.isLoggedIn()" (click)="authService.login()">Login</a>
+          <a class="btn btn-danger" role="button" *ngIf="authService.isLoggedIn()" (click)="authService.logoff()">Logout</a>
+      </div>
+    </div>
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="mb-3">
+  <router-outlet></router-outlet>
+</div>
+
 <app-messages></app-messages>
